@@ -61,7 +61,7 @@ You can add support for your own SSH public key providers by creating a script n
 
 The script should accept the identity username for the service it connects to, and output lines in the same format as an ~/.ssh/authorized\_keys file.
 
-If you do develop such a handler, I recommend that you connect to the service with SSL/TLS, and require a valid certificate and matching hostname. Use Requests.get(url, verify=True), for example.
+If you do develop such a handler, I recommend that you connect to the service with SSL/TLS, and require a valid certificate and matching hostname. Use `requests.get(url, verify=True)`, for example.
 
 Credits
 -------
